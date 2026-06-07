@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GhostChat – Adatvédelmi szabályzat</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.3em; margin-top: 1.6em; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #777; }
+</style>
+</head>
+<body>
+<h1>GhostChat – Adatvédelmi szabályzat</h1>
+<p><em>Hatályos: 2026. 06. 07.</em></p>
+
+<p>A GhostChat ("alkalmazás") egy üzenetküldő alkalmazás, amely a Ghost ID rendszert, vész PIN-t és önmegsemmisítő üzeneteket kínál. Ez a szabályzat leírja, milyen adatokat gyűjtünk, hogyan tároljuk és kezeljük azokat.</p>
+
+<h2>1. Milyen adatokat gyűjtünk</h2>
+<ul>
+  <li><strong>Fiókadatok</strong>: megjelenített név, egyedi Ghost ID azonosító, valamint a belépéshez és a vész funkcióhoz használt PIN kódok.</li>
+  <li><strong>Üzenetek és tartalmak</strong>: szöveges üzenetek, helymegosztás (koordináták), képek és hangüzenetek.</li>
+  <li><strong>Kapcsolatok</strong>: a felhasználó által hozzáadott ismerősök / kapcsolatkérések listája.</li>
+  <li><strong>Eszközadatok</strong>: push-értesítésekhez szükséges eszköz-token, online állapot.</li>
+  <li><strong>Helyileg tárolt adatok</strong>: a biometrikus feloldáshoz használt PIN biztonságos tárolóban, valamint alapvető bejelentkezési beállítások a készüléken.</li>
+</ul>
+<p>Az alkalmazás <strong>nem kér és nem gyűjt</strong> telefonszámot, e-mail címet vagy harmadik féltől származó hirdetési/analitikai azonosítót.</p>
+
+<h2>2. Hogyan tároljuk és továbbítjuk az adatokat</h2>
+<p>Az adatok a Google Firebase (Cloud Firestore és Firebase Cloud Messaging) szolgáltatásain keresztül kerülnek tárolásra és továbbításra, amelyek iparági szabványú titkosítást alkalmaznak az adatok átvitele (TLS) és tárolása (szerveroldali titkosítás) során. Az alkalmazás jelenleg nem alkalmaz végpontok közötti (end-to-end) titkosítást az üzenetek tartalmára.</p>
+
+<h2>3. Vész PIN funkció</h2>
+<p>A vész PIN megadásakor az alkalmazás egy korlátozott, "álcázott" felületet jelenít meg – ez <strong>nem törli</strong> a fiókot vagy az üzeneteket, kizárólag elrejti a valódi tartalmat a kényszerhelyzet idejére.</p>
+
+<h2>4. Önmegsemmisítő üzenetek</h2>
+<p>A küldő által beállított lejárati idő letelte után az érintett üzenetek a szerverről (Firestore-ból) is automatikusan és véglegesen törlésre kerülnek.</p>
+
+<h2>5. Fiók törlése</h2>
+<p>A felhasználó bármikor kezdeményezheti fiókja törlését az alkalmazáson belül. Ez véglegesen eltávolítja a fiókadatokat a szerverről, valamint törli a készüléken tárolt bejelentkezési és biztonsági adatokat.</p>
+
+<h2>6. Adatmegosztás harmadik felekkel</h2>
+<p>Az alkalmazás nem oszt meg személyes adatot harmadik féllel hirdetési vagy marketing célokra. Az adatok kizárólag az alkalmazás működéséhez szükséges szolgáltatóval (Google Firebase) kerülnek megosztásra, annak adatkezelési feltételei szerint.</p>
+
+<h2>7. Az Ön jogai</h2>
+<p>Kérheti adatai törlését a fiókja törlésével az alkalmazáson belül, vagy az alábbi elérhetőségen keresztül kapcsolatba léphet velünk kérdés vagy kérés esetén.</p>
+
+<h2>8. Kapcsolat</h2>
+<p>Adatvédelemmel kapcsolatos kérdés esetén írjon az alábbi e-mail címre: <strong>wattapoliper88@gmail.com</strong></p>
+
+<footer>
+  <p>Ez a szabályzat a Google Play Store követelményei alapján készült, és időről időre frissülhet.</p>
+</footer>
+</body>
+</html>
